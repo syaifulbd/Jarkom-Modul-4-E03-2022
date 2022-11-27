@@ -42,9 +42,8 @@
 
 ### B. Metode CIDR dengan tools GNS3
 
-- Hanya sempat membuat topologinya saja
+- Membuat Topologi
 
-![image](https://user-images.githubusercontent.com/82220673/204091302-9572a3cb-7082-4cd8-a173-0ec2cd36db59.png)
 
 
 ### Kendala
