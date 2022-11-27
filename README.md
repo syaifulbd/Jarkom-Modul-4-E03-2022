@@ -78,7 +78,291 @@
 
 Konfigurasi IP sebagai berikut :
 
+1. The Resonance
+auto eth0
+iface eth0 inet dhcp
+
+auto eth1
+iface eth1 inet static
+        address 10.23.144.1
+	netmask 255.255.255.252
+
+	
+auto eth2
+iface eth2 inet static
+        address 10.23.160.1
+	netmask 255.255.255.252
+	
+auto eth3
+iface eth3 inet static
+        address 10.23.32.1
+	netmask 255.255.255.252
+	
+auto eth4
+iface eth4 inet static
+	address 10.23.64.1
+	netmask 255.255.255.252
+
+2. The Order
+auto eth0
+iface eth0 inet static
+	address 10.23.32.2
+	netmask 255.255.255.252
+
+auto eth1
+iface eth1 inet static
+	address 10.23.16.1
+	netmask 255.255.255.192
+
+auto eth2
+iface eth2 inet static
+	address 10.23.8.1
+	netmask 255.255.255.252
+
+3. Ashaf
+auto eth0
+iface eth0 inet static
+	address 10.23.16.2
+	netmask 255.255.255.192
+	gateway 10.23.16.1
+
+4. The Minister
+auto eth0
+iface eth0 inet static
+	address 10.23.8.2
+	netmask 255.255.255.252
+
+auto eth1
+iface eth1 inet static
+	address 10.23.4.1
+	netmask 255.255.252.0
+
+auto eth2
+iface eth2 inet static
+	address 10.23.1.1
+	netmask 255.255.255.252
+
+5. Guideau
+auto eth0
+iface eth0 inet static
+	address 10.23.4.2
+	netmask 255.255.252.0
+	gateway 10.23.4.1
+
+6. The Dauntless
+auto eth0
+iface eth0 inet static
+	address 10.23.1.2
+	netmask 255.255.255.252
+
+auto eth1
+iface eth1 inet static
+	address 10.23.0.1
+	netmask 255.255.255.0
+
+7. Johan
+auto eth0
+iface eth0 inet static
+	address 10.23.0.2
+	netmask 255.255.255.0
+	gateway 10.23.0.1
+
+8. Phanora
+auto eth0
+iface eth0 inet static
+	address 10.23.0.3
+	netmask 255.255.255.0
+	gateway 10.23.0.1
+
+9. The Beast
+auto eth0
+iface eth0 inet static
+	address 10.23.64.2
+	netmask 255.255.255.252
+	gateway 10.23.64.1
+
+10. The Magical
+auto eth0
+iface eth0 inet static
+	address 10.23.160.2
+	netmask 255.255.255.252
+
+auto eth1
+iface eth1 inet static
+	address 10.23.162.1
+	netmask 255.255.254.0
+
+11. Haines
+auto eth0
+iface eth0 inet static
+	address 10.23.162.3
+	netmask 255.255.254.0
+	gateway 10.23.162.1
+
+12. Corvekt
+auto eth0
+iface eth0 inet static
+	address 10.23.162.2
+	netmask 255.255.254.0
+	gateway 10.23.162.1
+
+13. The Instrument
+auto eth0
+iface eth0 inet static
+	address 10.23.144.2
+	netmask 255.255.255.252
+
+auto eth1
+iface eth1 inet static
+	address 10.23.138.1
+	netmask 255.255.255.128
+
+auto eth2
+iface eth2 inet static
+	address 10.23.132.1
+	netmask 255.255.255.252
+
+auto eth3
+iface eth3 inet static
+	address 10.23.137.1
+	netmask 255.255.255.252
+
+14. Matt Cugat
+auto eth0
+iface eth0 inet static
+	address 10.23.138.2
+	netmask 255.255.255.128
+	gateway 10.23.138.1
+
+15. The Profound
+auto eth0
+iface eth0 inet static
+	address 10.23.137.2
+	netmask 255.255.255.252
+
+auto eth1
+iface eth1 inet static
+	address 10.23.136.1
+	netmask 255.255.255.128
+
+auto eth2
+iface eth2 inet static
+	address 10.23.136.129
+	netmask 255.255.255.128
+
+16. Spendrow
+auto eth0
+iface eth0 inet static
+	address 10.23.136.130
+	netmask 255.255.255.128
+	gateway 10.23.136.129
+
+17. Helga
+auto eth0
+iface eth0 inet static
+	address 10.23.136.2
+	netmask 255.255.255.128
+	gateway 10.23.136.1
+
+18. The Firefist
+auto eth0
+iface eth0 inet static
+	address 10.23.132.2
+	netmask 255.255.255.252
+
+auto eth1
+iface eth1 inet static
+        address 10.23.130.1
+	netmask 255.255.254.0
+
+auto eth2
+iface eth2 inet static
+	address 10.23.128.1
+	netmask 255.255.255.0
+
+19. Oakleave
+auto eth0
+iface eth0 inet static
+	address 10.23.130.2
+	netmask 255.255.254.0
+	gateway 10.23.130.1
+
+20. Keith
+auto eth0
+iface eth0 inet static
+	address 10.23.128.2
+	netmask 255.255.255.0
+	gateway 10.23.128.1
+
+21. The Queen
+auto eth0
+iface eth0 inet static
+	address 10.23.128.2
+	netmask 255.255.255.0
+
+auto eth1
+iface eth1 inet static
+	address 10.23.129.1
+	netmask 255.255.255.252
+
+22. The Witch
+auto eth0
+iface eth0 inet static
+	address 10.23.129.2
+	netmask 255.255.255.252
+	gateway 10.23.129.1
+
 - Melakukan Routing sesuai tree yang telah dibuat
+
+1. The Resonance
+route add -net 10.23.4.0 netmask 255.255.252.0 gw 10.23.32.2
+route add -net 10.23.1.0 netmask 255.255.255.252 gw 10.23.32.2
+route add -net 10.23.0.0 netmask 255.255.255.0 gw 10.23.32.2
+route add -net 10.23.8.0 netmask 255.255.255.252 gw 10.23.32.2
+route add -net 10.23.16.0 netmask 255.255.255.192 gw 10.23.32.2
+route add -net 10.23.138.0 netmask 255.255.255.128 gw 10.23.144.2
+route add -net 10.23.132.0 netmask 255.255.255.252 gw 10.23.144.2
+route add -net 10.23.128.0 netmask 255.255.255.0 gw 10.23.144.2
+route add -net 10.23.129.0 netmask 255.255.255.252 gw 10.23.144.2
+route add -net 10.23.130.0 netmask 255.255.254.0 gw 10.23.144.2
+route add -net 10.23.137.0 netmask 255.255.255.252 gw 10.23.144.2
+route add -net 10.23.136.0 netmask 255.255.255.128 gw 10.23.144.2
+route add -net 10.23.136.128 netmask 255.255.255.128 gw 10.23.144.2
+route add -net 10.23.162.0 netmask 255.255.254.0 gw 10.23.160.2
+
+2. The Order
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.23.32.1
+route add -net 10.23.4.0 netmask 255.255.252.0 gw 10.23.8.2
+route add -net 10.23.1.0 netmask 255.255.255.252 gw 10.23.8.2
+route add -net 10.23.0.0 netmask 255.255.255.0 gw 10.23.8.2
+
+3. The Minister
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.23.8.1
+route add -net 10.23.0.0 netmask 255.255.255.0 gw 10.23.1.2
+
+4. The Dauntless
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.23.1.1
+
+5. The Magical
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.23.160.1
+
+6. The Instrument
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.23.144.1
+route add -net 10.23.128.0 netmask 255.255.255.0 gw 10.23.132.2
+route add -net 10.23.129.0 netmask 255.255.255.252 gw 10.23.132.2
+route add -net 10.23.130.0 netmask 255.255.254.0 gw 10.23.132.2
+route add -net 10.23.136.0 netmask 255.255.255.128 gw 10.23.137.2
+route add -net 10.23.136.128 netmask 255.255.255.128 gw 10.23.137.2
+
+7. The Profound
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.23.137.1
+
+8. The Firefist
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.23.132.1
+route add -net 10.23.129.0 netmask 255.255.255.252 gw 10.23.128.2
+
+9. The Queen
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.23.128.1
 
 - Melakukan testing
 
@@ -96,3 +380,5 @@ Konfigurasi IP sebagai berikut :
 
 
 ### Kendala
+
+Kendala yang kami alami yakni pada masa pengerjaan kami hanya mampu menyelesaikan VLSM dengan konfigurasi pada CPT. Proses revisi pengerjaan CIDR baru dapat kami selesaikan dengan tambahan waktu dari asisten penguji yakni hari minggu dikarenakan kebingungan kami pada perhitungan dan konfigurasi.
